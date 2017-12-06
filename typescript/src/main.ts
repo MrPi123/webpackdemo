@@ -1,5 +1,5 @@
 export function log(msg:string) {
-    console.log(msg);
+    document.write(msg);
 }
 
 export class Name {
@@ -8,6 +8,10 @@ export class Name {
 
     constructor(name: String) {
         this.name = name
+    }
+
+    sayHello() {
+        log(`${this.name}你好啊`)
     }
 
 }
