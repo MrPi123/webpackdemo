@@ -1,0 +1,9 @@
+@mixin border($w) {
+	border: $w solid #d6d7dc;
+}
+
+div {
+	width: 100px;
+	@include border(1px);
+	background: url('../images/banner.jpg');
+}
